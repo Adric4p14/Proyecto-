@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Adventure!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Math Adventure!</h1>
+    </header>
+
+    <main>
+        <section id="game-section">
+            <h2>Solve the Problem!</h2>
+            <div id="problem-area">
+                <p id="problem-text"></p>
+                <input type="number" id="answer-input">
+                <button id="submit-answer">Submit</button>
+                <p id="feedback-text"></p>
+            </div>
+        </section>
+
+        <section id="store-section">
+            <h2>Store</h2>
+            <div id="currency-display">
+                <p>Coins: <span id="coins">0</span></p>
+            </div>
+            <div class="store-items">
+                <h3>Accessories</h3>
+                <ul id="accessories-list">
+                    <!-- Accessories will be listed here by JavaScript -->
+                </ul>
+                <h3>Characters/Pets</h3>
+                <ul id="characters-list">
+                    <!-- Characters/Pets will be listed here by JavaScript -->
+                </ul>
+                <h3>Power-ups</h3>
+                <ul id="powerups-list">
+                    <!-- Power-ups will be listed here by JavaScript -->
+                </ul>
+            </div>
+        </section>
+
+        <section id="character-display-section">
+            <h2>My Character</h2>
+            <div id="character-view">
+                <p>Your character and accessories will appear here.</p>
+                <!-- Character visualization will go here -->
+            </div>
+            <h3>My Power-ups</h3>
+            <ul id="my-powerups-list">
+                <!-- Acquired power-ups will be listed here -->
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Math Adventure App</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

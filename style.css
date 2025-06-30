@@ -1,0 +1,208 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; /* Green header */
+    color: white;
+    padding: 1em 0;
+    text-align: center;
+}
+
+main {
+    padding: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+section {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 1em;
+    padding: 1em;
+    width: 300px; /* Adjust as needed */
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    color: #2e8b57; /* Sea green */
+}
+
+#problem-area, #currency-display, .store-items, #character-view {
+    margin-top: 1em;
+}
+
+#problem-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff6347; /* Tomato red for problem text */
+}
+
+#answer-input {
+    padding: 0.5em;
+    margin-right: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 0.5em 1em;
+    background-color: #ff8c00; /* Dark orange */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #ffa500; /* Orange */
+}
+
+#feedback-text {
+    margin-top: 0.5em;
+    font-weight: bold;
+}
+
+.store-items ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.store-items li {
+    padding: 0.5em 0;
+    border-bottom: 1px solid #eee;
+}
+
+.store-items li:last-child {
+    border-bottom: none;
+}
+
+.store-items button {
+    margin-left: 1em;
+    background-color: #1e90ff; /* Dodger blue */
+}
+
+.store-items button:hover {
+    background-color: #4169e1; /* Royal blue */
+}
+
+#character-view {
+    min-height: 100px;
+    border: 2px dashed #4CAF50;
+    padding: 10px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+footer {
+    text-align: center;
+    padding: 1em 0;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Basic styling for list items that will be populated by JS */
+#accessories-list li, #characters-list li, #powerups-list li, #my-powerups-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    margin-bottom: 5px;
+    background-color: #e9ecef; /* Light grey background for list items */
+    border-radius: 4px;
+    border: 1px solid #ced4da; /* Subtle border */
+}
+
+#my-powerups-list li {
+    background-color: #d4edda; /* Light green for owned powerups */
+    color: #155724; /* Dark green text */
+    padding: 10px;
+    border-left: 5px solid #28a745; /* Green accent border */
+}
+
+#character-view h4 {
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: #007bff; /* Blue for subheadings in character view */
+}
+
+#character-view ul {
+    list-style-type: square; /* Use squares for accessories list */
+    padding-left: 20px;
+}
+
+#character-view p:first-child { /* Style for the active character name */
+    font-weight: bold;
+    font-size: 1.1em;
+    color: #5a6268; /* Dark grey for character name */
+}
+
+/* More vibrant button colors */
+button {
+    padding: 0.6em 1.2em; /* Slightly larger padding */
+    background-color: #ff7f50; /* Coral */
+    color: white;
+    border: none;
+    border-radius: 5px; /* More rounded corners */
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth transition for hover */
+}
+
+button:hover {
+    background-color: #ff6347; /* Tomato */
+}
+
+.store-items button {
+    background-color: #20c997; /* Teal */
+}
+
+.store-items button:hover {
+    background-color: #1baa80; /* Darker Teal */
+}
+
+#submit-answer {
+    background-color: #007bff; /* Primary Blue */
+}
+#submit-answer:hover {
+    background-color: #0056b3; /* Darker Blue */
+}
+
+/* Feedback text styling */
+#feedback-text.correct {
+    color: #28a745; /* Bootstrap success green */
+    font-weight: bold;
+}
+
+#feedback-text.incorrect {
+    color: #dc3545; /* Bootstrap danger red */
+    font-weight: bold;
+}
+#feedback-text.info {
+    color: #17a2b8; /* Bootstrap info cyan */
+}
+
+/* Styling for the 'Use' button for power-ups */
+.use-powerup-btn {
+    margin-left: 10px;
+    padding: 3px 8px;
+    font-size: 0.8em;
+    background-color: #ffc107; /* Amber/Warning color */
+    color: #212529; /* Dark text for contrast */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.use-powerup-btn:hover {
+    background-color: #e0a800; /* Darker amber on hover */
+}
